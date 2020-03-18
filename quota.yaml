@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: quota-test-calvin
+spec:
+  hard:
+    configmaps: "10" 			
+    persistentvolumeclaims: "4" 		
+    replicationcontrollers: "20" 		
+    secrets: "10" 				
+    services: "10"				
+    openshift.io/imagestreams: "10"
+    pods: "4"
+    limits.cpu: "4" 
+    limits.memory: "2Gi"
